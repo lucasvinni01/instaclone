@@ -1,0 +1,17 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+.link {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.link > a > img {
+    height: 40px;
+}

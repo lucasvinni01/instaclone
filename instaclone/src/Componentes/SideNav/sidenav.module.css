@@ -1,0 +1,22 @@
+
+
+.container ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .4em;
+}
+
+.container li {
+    width: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    list-style: none;
+    transition: .3s ease-out;
+}
+
+.container li:hover {
+    background-color: #F2F2F2;
+}

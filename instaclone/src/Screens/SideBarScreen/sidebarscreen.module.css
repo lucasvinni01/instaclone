@@ -1,0 +1,11 @@
+.container {
+    padding: 20px;
+    width: 15%;
+    border-right: 1px solid #c2c2c2;
+}
+
+.logoDiv {
+    cursor: pointer;
+    margin: 15px 0 25px;
+    padding: 0 5px;
+}
