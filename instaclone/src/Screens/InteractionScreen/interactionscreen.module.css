@@ -1,0 +1,20 @@
+.container {
+    border-radius: 2px;
+    border-left: 1px solid #c2c2c2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 52px);
+    gap: 10px;
+}
+
+.followbox {
+    grid-row: span 1;
+}
+
+.legendabox {
+    grid-row: span 6;
+}
+
+.interactionbox {
+    grid-row: span 1;
+}

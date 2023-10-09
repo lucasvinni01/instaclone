@@ -1,0 +1,39 @@
+.container {
+    padding: 0px 10px 0px 10px;
+}
+
+.head {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.head img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.nome {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.tempo {
+    color: #808080;
+    font-size: 14px;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    color: #808080;
+}
+
+.legenda {
+    padding-left: 50px;
+}
+
+.legenda p {
+    margin: 0;
+}
