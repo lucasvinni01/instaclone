@@ -1,7 +1,7 @@
 import {  useState  } from 'react'
 import styles from './legendabox.module.css'
 
-export default function LegendaBox({userImage, nome, tempo}) {
+export default function LegendaBox({userImage, nome, tempo, legenda, traducao}) {
     const [traduzir, setTraduzir] = useState(true)
 
     function toggleTranslate() {
@@ -17,7 +17,7 @@ export default function LegendaBox({userImage, nome, tempo}) {
             </div>
             <div className={styles.legenda}>
                 <p>
-                    {traduzir ? 'Oi, meu nome é Lucas e eu tenho trabalhado duro para me tornar um desenvolvedor Web.' : 'Hi, my name is Lucas, and I havve been working hard to become a Web developer.'}
+                    {traduzir ? `${legenda}` : `${traducao}`}
                 </p>
                 <button
                 onClick={toggleTranslate}

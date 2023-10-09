@@ -1,11 +1,13 @@
 import {  useState  } from 'react'
 import {  useNavigate  } from 'react-router-dom'
+import {  useHistory  } from 'react-router-dom'
 import styles from './loginbar.module.css'
 import FaceBookIcon from './facebook-icon.png'
 import Logo from '../Logo'
+import PostPage from '../../Pages/PostPage'
 
 export default function LoginBar() {
-    const [emailValue, setEmailValue] = useState('')
+    const [userValue, setUserValue] = useState('')
     const [senhaValue, setSenhaValue] = useState('')
     const navegar = useNavigate()
 
@@ -13,7 +15,7 @@ export default function LoginBar() {
         <div className={styles.container}>
             <Logo largura='200px'/>
             <form onSubmit={() => navegar('/post')} className={styles.form}>
-                <input type='text' placeholder='Usuário' value={emailValue} className={styles.input}/>
+                <input type='text' placeholder='Usuário' value={userValue} className={styles.input} onChange={(e)=>setUserValue(e.target.value)}/>
                 <input type='password' placeholder='Senha' value={senhaValue} className={styles.input}/>
                 <button type='submit' className={styles.button}>Entrar</button>
             </form>

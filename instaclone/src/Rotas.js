@@ -3,6 +3,7 @@ import LoginPage from './Pages/LoginPage'
 import PostPage from './Pages/PostPage'
 
 export default function Rotas() {
+
     return (
         <BrowserRouter>
             <Routes>
